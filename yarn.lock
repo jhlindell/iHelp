@@ -1889,11 +1889,7 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
-<<<<<<< HEAD
 dom-helpers@^3.2.0, dom-helpers@^3.2.1:
-=======
-dom-helpers@^3.2.0:
->>>>>>> 3b0ac15f5bff484453c4f13066b3238bef141c08
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.2.1.tgz#3203e07fed217bd1f424b019735582fc37b2825a"
 
