@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import RewardsCarousel from './components/rewards.component.js';
+// import RewardsCarousel from './components/rewards.component.js';
+import TaskList from './components/taskList.js';
 import './App.css';
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <RewardsCarousel />
+        <TaskList />
       </div>
       </MuiThemeProvider>
     );
