@@ -22,3 +22,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.kid-name, .task-name{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.points{
+  font-size: 1.5em;
+}

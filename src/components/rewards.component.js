@@ -13,33 +13,54 @@ class RewardsCarousel extends Component {
 render(){
   return (
     <div>
-      <AutoRotatingCarousel
-        label="Get started"
-        open
-      >
-        <Slide
-          media={<img src="http://www.icons101.com/icon_png/size_256/id_79394/youtube.png" />}
-          mediaBackgroundStyle={{ backgroundColor: red400 }}
-          contentStyle={{ backgroundColor: red600 }}
-          title="This is a very cool feature"
-          subtitle="Just using this will blow your mind."
-        />
-        <Slide
-          media={<img src="http://www.icons101.com/icon_png/size_256/id_80975/GoogleInbox.png" />}
-          mediaBackgroundStyle={{ backgroundColor: blue400 }}
-          contentStyle={{ backgroundColor: blue600 }}
-          title="Ever wanted to be popular?"
-          subtitle="Well just mix two colors and your are good to go!"
-        />
-        <Slide
-          media={<img src="http://www.icons101.com/icon_png/size_256/id_76704/Google_Settings.png" />}
-          mediaBackgroundStyle={{ backgroundColor: green400 }}
-          contentStyle={{ backgroundColor: green600 }}
-          title="May the force be with you"
-          subtitle="The Force is a metaphysical and ubiquitous power in the Star Wars universe."
-        />
-      </AutoRotatingCarousel>
-    </div>
+    <AutoRotatingCarousel
+            label="Get it!"
+            open
+          >
+            <Slide
+              media={<img src="http://lego.brickinstructions.com/75000/75174/001.jpg" />}
+              mediaBackgroundStyle={{ backgroundColor: red400 }}
+              contentStyle={{ backgroundColor: red600 }}
+              title="Lego Star Wars"
+              subtitle="35 points"
+            />
+            <Slide
+              media={<img src="http://www.shefinds.com/files/2015/05/forever-21-kids.png" />}
+              mediaBackgroundStyle={{ backgroundColor: blue400 }}
+              contentStyle={{ backgroundColor: blue600 }}
+              title="$20 at Forever 21"
+              subtitle="30 points"
+            />
+            <Slide
+              media={<img src="https://www.punchbowl.com/gridfs/fs/54b55304196c6f114900010a-1421169412" />}
+              mediaBackgroundStyle={{ backgroundColor: green400 }}
+              contentStyle={{ backgroundColor: green600 }}
+              title="Chuck E. Cheese Pizza Party"
+              subtitle="75 points"
+            />
+            <Slide
+              media={<img src="https://images-na.ssl-images-amazon.com/images/I/41oXxNIEkZL._SY355_.jpg" />}
+              mediaBackgroundStyle={{ backgroundColor: red400 }}
+              contentStyle={{ backgroundColor: red600 }}
+              title="Pencil Case"
+              subtitle="5 points"
+            />
+            <Slide
+              media={<img src="http://media.moddb.com/images/games/1/42/41925/fallout4-box.jpg" />}
+              mediaBackgroundStyle={{ backgroundColor: blue400 }}
+              contentStyle={{ backgroundColor: blue600 }}
+              title="Video Game >$40"
+              subtitle="60 points"
+            />
+            <Slide
+              media={<img src="https://images-na.ssl-images-amazon.com/images/I/51Zh7gH41nL._SY355_.jpg" />}
+              mediaBackgroundStyle={{ backgroundColor: green400 }}
+              contentStyle={{ backgroundColor: green600 }}
+              title="Fidget Spinner"
+              subtitle="10 points"
+            />
+          </AutoRotatingCarousel>
+        </div>
   )
 }
 }
