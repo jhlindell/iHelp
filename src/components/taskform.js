@@ -5,8 +5,8 @@ class Taskform extends React.Component {
   constructor(){
     super();
     this.state = {
-      taskName: 'My Task',
-      taskPoints: 3
+      taskName: '',
+      taskPoints: 0
     }
   }
 

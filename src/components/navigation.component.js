@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Navbar, NavItem} from 'react-materialize'
-import Tasks from './tasks.component'
+import TaskList from './taskList.js'
 import Kid from './kid'
 import RewardsCarousel from './rewards.component'
 
@@ -52,7 +52,7 @@ class Navigation extends Component {
         <NavItem onClick={this.clickRewards}>Rewards</NavItem>
         </Navbar>
         { this.state.tasks &&
-          <Tasks />
+          <TaskList />
         }
         { this.state.kids &&
           <Kid />
