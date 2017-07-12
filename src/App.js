@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RewardsCarousel from './components/rewards.component.js';
 import './App.css';
+import Navigation from './components/navigation.component';
 import Kid from './components/kid';
 
 class App extends Component {
@@ -10,10 +11,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <Kid />
+        <Navigation />
       </div>
       </MuiThemeProvider>
     );
