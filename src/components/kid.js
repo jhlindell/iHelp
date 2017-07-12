@@ -1,5 +1,5 @@
 import React from 'react'
-// import 'materialize-css/dist/css/materialize.min.css'
+import {Collection, CollectionItem} from 'react-materialize'
 
 const Kid = ({
   name
@@ -7,32 +7,15 @@ const Kid = ({
   return (
     <div className="container">
       <div className="row">
-        <nav>
-          <div className="nav-wrapper teal lighten-2">
-            <div className="col s12">
-              <a href="#" className="brand-logo">Example Component</a>
-              <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li><a href="#">Taylor</a></li>
-                <li><a href="#">Hunter</a></li>
-                <li><a href="#">Jordan</a></li>
-                <li><a href="#">Emma</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div className="row">
-        <div className="col s12">
-          <p>
-            The message is:
-          </p>
-          <blockquote>
-            {name}
-          </blockquote>
+          <Collection header='My Kids'>
+          	<CollectionItem><span className="kid-name">Taylor:</span> <span className="points">0 points</span></CollectionItem>
+            <CollectionItem><span className="kid-name">Hunter:</span> <span className="points">12 points</span></CollectionItem>
+            <CollectionItem><span className="kid-name">Jordan:</span> <span className="points">33 points</span></CollectionItem>
+            <CollectionItem><span className="kid-name">Emma:</span> <span className="points">7 points</span></CollectionItem>
+          </Collection>
         </div>
       </div>
 
-    </div>
   )
 }
 
