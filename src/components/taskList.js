@@ -10,7 +10,7 @@ class TaskList extends React.Component {
     this.state = {
         tasks: [
           {id: 1, taskName: "Mow the lawn", taskPoints: 3},
-          {id:2, taskName: "Do the dishes", taskPoints: 2}
+          {id: 2, taskName: "Do the dishes", taskPoints: 2}
         ]
     }
   }
