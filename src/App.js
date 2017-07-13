@@ -22,7 +22,9 @@ class App extends Component {
     kids: [
       {id: 1, kidName: "Taylor", pointsEarned: 12},
       {id: 2, kidName: "Hunter", pointsEarned: 10}
-    ]
+    ],
+    value: 0
+
   }
 
   addTask = (task) => {

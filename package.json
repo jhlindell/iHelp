@@ -10,7 +10,8 @@
     "react-materialize": "^1.0.4",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
-    "react-swipeable-views": "^0.12.3"
+    "react-swipeable-views": "^0.12.3",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
