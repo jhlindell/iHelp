@@ -1,5 +1,13 @@
 .App {
+  /*text-align: center;*/
+}
+
+.taskList {
   text-align: center;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -23,7 +31,7 @@
   to { transform: rotate(360deg); }
 }
 
-.kid-name, .task-name{
+.kid-name, .task-item{
   font-size: 2em;
   font-weight: bold;
   text-align: left;

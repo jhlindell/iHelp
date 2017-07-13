@@ -2,15 +2,15 @@ import React from 'react';
 
 class Task extends React.Component {
 
-
   render() {
     return (
-      <div className="collection-item">
-        Task: {this.props.task.taskName} Points: {this.props.task.taskPoints}
-      </div>
+      <tr>
+        <td>{this.props.task.id} </td>
+        <td>{this.props.task.taskName} </td>
+        <td>{this.props.task.taskPoints} </td>
+      </tr>
     )
   }
-
 }
 
 export default Task;
