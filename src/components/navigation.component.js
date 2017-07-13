@@ -51,15 +51,6 @@ class Navigation extends Component {
         <NavItem onClick={this.clickKids}>Kids</NavItem>
         <NavItem onClick={this.clickRewards}>Rewards</NavItem>
         </Navbar>
-        { this.state.tasks &&
-          <TaskList />
-        }
-        { this.state.kids &&
-          <KidList />
-        }
-        { this.state.rewards &&
-          <RewardsCarousel />
-        }
       </div>
     )
 
