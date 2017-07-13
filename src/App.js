@@ -12,7 +12,33 @@ import KidList from './components/kidList.js';
 import RewardsCarousel from './components/rewards.component.js';
 import {Navbar, NavItem} from 'react-materialize'
 
+
 class App extends Component {
+  state = {
+    tasks: [
+      {id: 1, taskName: "Mow the lawn", taskPoints: 3},
+      {id: 2, taskName: "Do the dishes", taskPoints: 2}
+    ],
+    kids: [
+      {id: 1, kidName: "Taylor", kidAge: 12},
+      {id: 2, kidName: "Hunter", kidAge: 10}
+    ]
+  }
+
+  addTask = (task) => {
+    let tasks = this.state.tasks;
+    task.id = tasks.length +1;
+    tasks.push(task);
+    this.setState({tasks:tasks})
+  };
+
+  addKid = (kid) => {
+    let kids = this.state.kids;
+    kid.id = kids.length +1;
+    kids.push(kid);
+    this.setState({kids:kids})
+  }
+
   render() {
     return (
       <Router>
@@ -24,9 +50,9 @@ class App extends Component {
             <NavItem><Link to="/rewards">Rewards</Link></NavItem>
           </Navbar>
 
-          <Route exact path="/" component={AggList}/>
-          <Route path="/tasks" component={TaskList}/>
-          <Route path="/kids" component={KidList}/>
+          <Route exact path="/" component={() => <AggList tasks={this.state.tasks} />}/>
+          <Route path="/tasks" component={() => <TaskList tasks={this.state.tasks} addTask={this.addTask} />}/>
+          <Route path="/kids" component={() => <KidList kids={this.state.kids} addKid={this.addKid} />}/>
           <Route path="/rewards" component={RewardsCarousel}/>
         </div>
       </Router>

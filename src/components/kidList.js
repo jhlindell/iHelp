@@ -5,23 +5,6 @@ import {Table, Row, Col} from 'react-materialize'
 
 class KidList extends React.Component {
 
-  constructor(){
-    super();
-    this.state = {
-        kids: [
-          {id: 1, kidName: "Taylor", kidAge: 12},
-          {id: 2, kidName: "Hunter", kidAge: 10}
-        ]
-    }
-  }
-
-  addKid = (kid) => {
-    let kids = this.state.kids;
-    kid.id = kids.length +1;
-    kids.push(kid);
-    this.setState({kids:kids})
-  }
-
   render() {
     return (
       <Row className="kidList">
@@ -35,10 +18,10 @@ class KidList extends React.Component {
               </tr>
             </thead>
             <tbody>
-              { this.state.kids.map(kid => <Kid key={ kid.id } kid = {kid} />)}
+              { this.props.kids.map(kid => <Kid key={ kid.id } kid = {kid} />)}
             </tbody>
           </Table>
-          <Kidform add={this.addKid}/>
+          <Kidform add={this.props.addKid}/>
         </Col>
       </Row>
     )
