@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Navbar, NavItem} from 'react-materialize'
 import TaskList from './taskList.js'
-import Kid from './kid'
+import KidList from './kidList'
 import RewardsCarousel from './rewards.component'
 
 class Navigation extends Component {
@@ -55,7 +55,7 @@ class Navigation extends Component {
           <TaskList />
         }
         { this.state.kids &&
-          <Kid />
+          <KidList />
         }
         { this.state.rewards &&
           <RewardsCarousel />

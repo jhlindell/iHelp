@@ -10,14 +10,14 @@ class KidList extends React.Component {
     this.state = {
         kids: [
           {id: 1, kidName: "Taylor", kidAge: 12},
-          {id: 2, kidName: "Hunter", kidAges: 10}
+          {id: 2, kidName: "Hunter", kidAge: 10}
         ]
     }
   }
 
   addKid = (kid) => {
     let kids = this.state.kids;
-    kid.id = kid.length +1;
+    kid.id = kids.length +1;
     kids.push(kid);
     this.setState({kids:kids})
   }
@@ -38,7 +38,7 @@ class KidList extends React.Component {
               { this.state.kids.map(kid => <Kid key={ kid.id } kid = {kid} />)}
             </tbody>
           </Table>
-          <Taskform add={this.addKid}/>
+          <Kidform add={this.addKid}/>
         </Col>
       </Row>
     )
