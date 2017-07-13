@@ -6,17 +6,11 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import AggList from './components/aggList.js';
 import TaskList from './components/taskList.js';
 import KidList from './components/kidList.js';
 import RewardsCarousel from './components/rewards.component.js';
 import {Navbar, NavItem} from 'react-materialize'
-
-
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
 
 class App extends Component {
   render() {
@@ -30,7 +24,7 @@ class App extends Component {
             <NavItem><Link to="/rewards">Rewards</Link></NavItem>
           </Navbar>
 
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/" component={AggList}/>
           <Route path="/tasks" component={TaskList}/>
           <Route path="/kids" component={KidList}/>
           <Route path="/rewards" component={RewardsCarousel}/>
