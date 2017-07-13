@@ -15,7 +15,6 @@ class TaskList extends React.Component {
   }
 
   addTask = (task) => {
-    console.log(task);
     let tasks = this.state.tasks;
     tasks.push(task);
     this.setState({tasks:tasks})

@@ -15,7 +15,6 @@ const Kid = ({
           </Collection>
         </div>
       </div>
-
   )
 }
 
