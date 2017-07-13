@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
@@ -14,17 +14,30 @@ class AggList extends React.Component {
 
   render(){
     return (
-      <MuiThemeProvider>
-       <SelectField
-        floatingLabelText = "Tasks"
-         onChange={this.handleChange}>
-         {this.props.tasks.map(task => {
-           return(
-             <MenuItem key={task.id} value={task.id} primaryText={task.taskName}/>
-           )
-         })}
-       </SelectField>
-      </MuiThemeProvider>
+      <div>
+        <MuiThemeProvider>
+         <SelectField
+          floatingLabelText = "Tasks"
+           onChange={this.handleChange}>
+           {this.props.tasks.map(task => {
+             return(
+               <MenuItem key={task.id} value={task.id} primaryText={task.taskName}/>
+             )
+           })}
+         </SelectField>
+        </MuiThemeProvider>
+        <MuiThemeProvider>
+         <SelectField
+          floatingLabelText = "Kids"
+           onChange={this.handleChange}>
+           {this.props.kids.map(kid => {
+             return(
+               <MenuItem key={kid.id} value={kid.id} primaryText={kid.kidName}/>
+             )
+           })}
+         </SelectField>
+        </MuiThemeProvider>
+      </div>
     )
   }
 }
