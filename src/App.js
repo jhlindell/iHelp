@@ -20,8 +20,8 @@ class App extends Component {
       {id: 2, taskName: "Do the dishes", taskPoints: 2}
     ],
     kids: [
-      {id: 1, kidName: "Taylor", kidAge: 12},
-      {id: 2, kidName: "Hunter", kidAge: 10}
+      {id: 1, kidName: "Taylor", pointsEarned: 12},
+      {id: 2, kidName: "Hunter", pointsEarned: 10}
     ]
   }
 
@@ -50,7 +50,7 @@ class App extends Component {
             <NavItem><Link to="/rewards">Rewards</Link></NavItem>
           </Navbar>
 
-          <Route exact path="/" component={() => <AggList tasks={this.state.tasks} />}/>
+          <Route exact path="/" component={() => <AggList tasks={this.state.tasks} kids={this.state.kids}/>}/>
           <Route path="/tasks" component={() => <TaskList tasks={this.state.tasks} addTask={this.addTask} />}/>
           <Route path="/kids" component={() => <KidList kids={this.state.kids} addKid={this.addKid} />}/>
           <Route path="/rewards" component={RewardsCarousel}/>

@@ -6,7 +6,7 @@ class Kidform extends React.Component {
     super();
     this.state = {
       kidName: '',
-      kidAge: 0
+      pointsEarned: 0
     }
   }
 
@@ -24,8 +24,6 @@ class Kidform extends React.Component {
       <form onSubmit={this.add}>
         <label htmlFor="kidName">Kid Name</label>
         <input id="kidName" name="kidName" value={this.state.kidName} onChange={this.handleChange}/>
-        <label htmlFor="kidAge">Kid Age</label>
-        <input id="kidAge" name="kidAge"  onChange={this.handleChange}/>
         <button>Add Kid</button>
       </form>
     )

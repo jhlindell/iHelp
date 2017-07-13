@@ -14,7 +14,7 @@ class KidList extends React.Component {
               <tr>
                 <th data-field="id">Id</th>
                 <th data-field="kidName">Kid Name</th>
-                <th data-field="kidAge">Kid Age</th>
+                <th data-field="pointsEarned">Points Earned</th>
               </tr>
             </thead>
             <tbody>
